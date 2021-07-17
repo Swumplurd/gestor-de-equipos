@@ -1,17 +1,15 @@
 <script>
     $(document).ready(() => {
-        $( '#formulario-equipo' ).submit( function( e ) {
-            $.ajax( {
-                url: 'control/c-formulario-equipo.php',
-                type: 'POST',
-                data: new FormData( this ),
-                processData: false,
-                contentType: false,
-                success: respuesta => {
+        $('#guardar_equipo').click(() => {
+            $.ajax({
+                url: "control/c-formulario-equipo.php",
+                data: $('#formulario-equipo').serialize(),
+                type: "post",
+                success: (respuesta) => {
                     console.log(respuesta)
                 }
             });
-            e.preventDefault();
+            
         });
     });
 </script>

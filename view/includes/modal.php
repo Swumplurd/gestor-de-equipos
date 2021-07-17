@@ -14,8 +14,20 @@
               <div class="col-lg-6 col-md-12">
                 <div class="mb-3">
                   <label for="centro_salud" class="form-label">Centro de Salud</label>
-                  <input type="text" class="form-control" name="centro_salud" id="centro_salud" aria-describedby="centroSaludHelp">
-                  <div id="centroSaludHelp" class="form-text">Ingrese el centro de salud del equipo...</div>
+                  <select class="form-select" aria-label="centro_salud" name="centro_salud" id="centro_salud" aria-describedby="centro_saludHelp">
+                    <option value="San Salvador">San Salvador</option>
+                    <option value="San Pablo">San Pablo</option>
+                    <option value="San Bartolome">San Bartolome</option>
+                    <option value="LAEL">LAEL</option>
+                    <option value="Villa Milpa Alta">Villa Milpa Alta</option>
+                    <option value="Santa Ana">Santa Ana</option>
+                    <option value="San Geronimo">San Geronimo</option>
+                    <option value="San Juan Tepenahuac">San Juan Tepenahuac</option>
+                    <option value="Gaston Melo">Gaston Melo</option>
+                    <option value="UNEME CAPA">UNEME CAPA</option>
+                    <option value="Jurisdiccion">Jurisdiccion</option>
+                  </select>
+                  <div id="centro_saludHelp" class="form-text">Ingrese el centro de salud del equipo...</div>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
@@ -78,15 +90,15 @@
               <div class="col-lg-6 col-md-12">
                 <div class="mb-3">
                   <label for="teclado" class="form-label">Teclado</label>
-                  <input class="form-control" type="file" name="teclado" id="teclado" aria-describedby="tecladoHelp">
-                  <div id="tecladoHelp" class="form-text">Seleccione la imagen del teclado...</div>
+                  <input class="form-control" type="text" name="teclado" id="teclado" aria-describedby="tecladoHelp">
+                  <div id="tecladoHelp" class="form-text">Ingrese el numero de serie del teclado...</div>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
                 <div class="mb-3">
                   <label for="mouse" class="form-label">Mouse</label>
-                  <input class="form-control" type="file" name="mouse" id="mouse" aria-describedby="mouseHelp">
-                  <div id="mouseHelp" class="form-text">Seleccione la imagen del mouse...</div>
+                  <input class="form-control" type="text" name="mouse" id="mouse" aria-describedby="mouseHelp">
+                  <div id="mouseHelp" class="form-text">Ingrese el numero de serie del mouse...</div>
                 </div>
               </div>
             </div>
@@ -140,7 +152,7 @@
 
           <div class="modal-footer">
             <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-            <input class="btn btn-secondary" type="submit" value="Guardar">
+            <button id="guardar_equipo" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
           </div>
 
         </form>

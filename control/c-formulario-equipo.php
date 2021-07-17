@@ -1,7 +1,7 @@
 <?php
     require_once '../app/conexion.php';
 
-    mkdir('../archivos/fotos-perifericos/' . $_POST['centro_salud'] . '/' . $_POST['n_serie'] . '/', 0777, true);
+    /* mkdir('../archivos/fotos-perifericos/' . $_POST['centro_salud'] . '/' . $_POST['n_serie'] . '/', 0777, true);
     $direccion_guardar = '../archivos/fotos-perifericos/' . $_POST['centro_salud'] . '/' . $_POST['n_serie'] . '/';
 
     $direccion_archivo = $direccion_guardar . basename($_FILES['teclado']['name']);
@@ -10,9 +10,21 @@
 
     $direccion_archivo = $direccion_guardar . basename($_FILES['mouse']['name']);
     $direccion_mouse_bd = 'archivos/fotos-perifericos/' . $_POST['centro_salud'] . '/' . $_POST['n_serie'] . '/' . basename($_FILES['mouse']['name']);
-    move_uploaded_file($_FILES['mouse']['tmp_name'], $direccion_archivo);
+    move_uploaded_file($_FILES['mouse']['tmp_name'], $direccion_archivo); */
 
     /* === */
+
+    if($_POST['win'] == null) {
+        $_POST['win'] = 'off'; // Imprimes o haces tu lógica ;)
+    }
+
+    if($_POST['office'] == null) {
+        $_POST['office'] = 'off';
+    }
+
+    if($_POST['antivirus'] == null) {
+        $_POST['antivirus'] = 'off';
+    }
     
     $sql = "INSERT INTO t_equipos(centro_salud, area, proveedor, dispositivo, modelo, marca, n_serie, teclado, mouse, usuario, ip, mac, win, office, antivirus) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -25,8 +37,8 @@
         $_POST['modelo'],
         $_POST['marca'],
         $_POST['n_serie'],
-        $direccion_archivo,
-        $direccion_archivo,
+        $_POST['teclado'],
+        $_POST['mouse'],
         $_POST['usuario'],
         $_POST['ip'],
         $_POST['mac'],
