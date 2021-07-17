@@ -1,19 +1,6 @@
 <?php
     require_once '../app/conexion.php';
 
-    /* mkdir('../archivos/fotos-perifericos/' . $_POST['centro_salud'] . '/' . $_POST['n_serie'] . '/', 0777, true);
-    $direccion_guardar = '../archivos/fotos-perifericos/' . $_POST['centro_salud'] . '/' . $_POST['n_serie'] . '/';
-
-    $direccion_archivo = $direccion_guardar . basename($_FILES['teclado']['name']);
-    $direccion_teclado_bd = 'archivos/fotos-perifericos/' . $_POST['centro_salud'] . '/' . $_POST['n_serie'] . '/' . basename($_FILES['teclado']['name']);
-    move_uploaded_file($_FILES['teclado']['tmp_name'], $direccion_archivo);
-
-    $direccion_archivo = $direccion_guardar . basename($_FILES['mouse']['name']);
-    $direccion_mouse_bd = 'archivos/fotos-perifericos/' . $_POST['centro_salud'] . '/' . $_POST['n_serie'] . '/' . basename($_FILES['mouse']['name']);
-    move_uploaded_file($_FILES['mouse']['tmp_name'], $direccion_archivo); */
-
-    /* === */
-
     if($_POST['win'] == null) {
         $_POST['win'] = 'off'; // Imprimes o haces tu lógica ;)
     }
