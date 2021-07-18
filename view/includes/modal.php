@@ -130,19 +130,19 @@
             <div class="row">
               <div class="col-lg-4 col-md-12 d-flex justify-content-center">
                 <div class="form-check form-switch mt-2">
-                  <input class="form-check-input" type="checkbox" name="win" id="win">
+                  <input class="form-check-input" type="checkbox" name="win" id="win" value="Si">
                   <label class="form-check-label" for="win">Licencia Windows</label>
                 </div>
               </div>
               <div class="col-lg-4 col-md-12 d-flex justify-content-center">
                 <div class="form-check form-switch mt-2">
-                  <input class="form-check-input" type="checkbox" name="office" id="office">
+                  <input class="form-check-input" type="checkbox" name="office" id="office" value="Si">
                   <label class="form-check-label" for="office">Licencia Office</label>
                 </div>
               </div>
               <div class="col-lg-4 col-md-12 d-flex justify-content-center">
                 <div class="form-check form-switch mt-2">
-                  <input class="form-check-input" type="checkbox" name="antivirus" id="antivirus">
+                  <input class="form-check-input" type="checkbox" name="antivirus" id="antivirus" value="Si">
                   <label class="form-check-label" for="antivirus">Licencia Antivirus</label>
                 </div>
               </div>

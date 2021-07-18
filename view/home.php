@@ -39,24 +39,35 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php
+                        require_once 'app/conexion.php';
+                        $sql = 'SELECT * FROM t_equipos';
+                        $resultado = $conexion->query($sql);
+                        /* $fila = $resultado->fetch_assoc();
+                        print_r($fila); */
+                        while ($fila = $resultado->fetch_assoc()) {
+                    ?>
                     <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th scope="row"><?php echo $fila['id'] ?></th>
+                        <td><?php echo $fila['centro_salud'] ?></td>
+                        <td><?php echo $fila['area'] ?></td>
+                        <td><?php echo $fila['proveedor'] ?></td>
+                        <td><?php echo $fila['dispositivo'] ?></td>
+                        <td><?php echo $fila['modelo'] ?></td>
+                        <td><?php echo $fila['marca'] ?></td>
+                        <td><?php echo $fila['n_serie'] ?></td>
+                        <td><?php echo $fila['teclado'] ?></td>
+                        <td><?php echo $fila['mouse'] ?></td>
+                        <td><?php echo $fila['usuario'] ?></td>
+                        <td><?php echo $fila['ip'] ?></td>
+                        <td><?php echo $fila['mac'] ?></td>
+                        <td><?php echo $fila['win'] ?></td>
+                        <td><?php echo $fila['office'] ?></td>
+                        <td><?php echo $fila['antivirus'] ?></td>
                     </tr>
+                    <?php
+                        }
+                    ?>
                 </tbody>
             </table>
         </div>

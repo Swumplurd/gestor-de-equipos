@@ -2,15 +2,15 @@
     require_once '../app/conexion.php';
 
     if($_POST['win'] == null) {
-        $_POST['win'] = 'off'; // Imprimes o haces tu lógica ;)
+        $_POST['win'] = 'No'; // Imprimes o haces tu lógica ;)
     }
 
     if($_POST['office'] == null) {
-        $_POST['office'] = 'off';
+        $_POST['office'] = 'No';
     }
 
     if($_POST['antivirus'] == null) {
-        $_POST['antivirus'] = 'off';
+        $_POST['antivirus'] = 'No';
     }
     
     $sql = "INSERT INTO t_equipos(centro_salud, area, proveedor, dispositivo, modelo, marca, n_serie, teclado, mouse, usuario, ip, mac, win, office, antivirus) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";

@@ -6,7 +6,8 @@
                 data: $('#formulario-equipo').serialize(),
                 type: "post",
                 success: (respuesta) => {
-                    console.log(respuesta)
+                    /* console.log(respuesta) */
+                    window.location = 'home'
                 }
             });
             
