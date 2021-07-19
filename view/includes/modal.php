@@ -1,4 +1,10 @@
 <!-- Modal -->
+<style>
+  input {
+    text-transform: uppercase;
+  }
+
+</style>
 <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
@@ -15,17 +21,17 @@
                 <div class="mb-3">
                   <label for="centro_salud" class="form-label">Centro de Salud</label>
                   <select class="form-select" aria-label="centro_salud" name="centro_salud" id="centro_salud" aria-describedby="centro_saludHelp">
-                    <option value="San Salvador">San Salvador</option>
-                    <option value="San Pablo">San Pablo</option>
-                    <option value="San Bartolome">San Bartolome</option>
+                    <option value="SAN SALVADOR">SAN SALVADOR</option>
+                    <option value="SAN PABLO">SAN PABLO</option>
+                    <option value="SAN BARTOLOME">SAN BARTOLOME</option>
                     <option value="LAEL">LAEL</option>
-                    <option value="Villa Milpa Alta">Villa Milpa Alta</option>
-                    <option value="Santa Ana">Santa Ana</option>
-                    <option value="San Geronimo">San Geronimo</option>
-                    <option value="San Juan Tepenahuac">San Juan Tepenahuac</option>
-                    <option value="Gaston Melo">Gaston Melo</option>
+                    <option value="VILLA MILPA ALTA">VILLA MILPA ALTA</option>
+                    <option value="SANTA ANA">SANTA ANA</option>
+                    <option value="SAN GERONIMO">SAN GERONIMO</option>
+                    <option value="SAN JUAN TEPENAHUAC">SAN JUAN TEPENAHUAC</option>
+                    <option value="GASTON MELO">GASTON MELO</option>
                     <option value="UNEME CAPA">UNEME CAPA</option>
-                    <option value="Jurisdiccion">Jurisdiccion</option>
+                    <option value="JURISDICCION">JURISDICCION</option>
                   </select>
                   <div id="centro_saludHelp" class="form-text">Ingrese el centro de salud del equipo...</div>
                 </div>
@@ -44,7 +50,7 @@
                 <div class="mb-3">
                   <label for="proveedor" class="form-label">Proveedor de Servicio</label>
                   <select class="form-select" aria-label="proveedor" name="proveedor" id="proveedor" aria-describedby="proveedorHelp">
-                    <option value="Telmex">Telmex</option>
+                    <option value="TELMEX">TELMEX</option>
                     <option value="SSP">SSP</option>
                   </select>
                   <div id="proveedorHelp" class="form-text">Ingrese el proveedor del dispositivo...</div>
@@ -55,7 +61,7 @@
                   <label for="dispositivo" class="form-label">Tipo de Dispositivo</label>
                   <select class="form-select" aria-label="dispositivo" name="dispositivo" id="dispositivo" aria-describedby="dispositivoHelp">
                     <option value="PC">PC</option>
-                    <option value="Laptop">Laptop</option>
+                    <option value="LAPTOP">LAPTOP</option>
                   </select>
                   <div id="dispositivoHelp" class="form-text">Ingrese el tipo de dispositivo...</div>
                 </div>
